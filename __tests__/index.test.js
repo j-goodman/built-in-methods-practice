@@ -35,7 +35,7 @@ describe("convertStringToNumber()", () => {
     expect(actual).toEqual(expected)
   });
 
-  test("should convert strings with decimals to the next lowest integer", () => {
+  test("should include decimals in the return value", () => {
     const actual = convertStringToNumber("3.14159");
     const expected = 3.14159;
     expect(actual).toEqual(expected)
